@@ -1,4 +1,4 @@
-version: '3'
+  version: '3'
 
 volumes:
   db-data:
@@ -26,3 +26,4 @@ services:
     environment:
       - 'POSTGRES_USER=postgres'
       - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGES_HOST_AUTH_METHOD=trust'
